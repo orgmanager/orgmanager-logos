@@ -1,0 +1,30 @@
+{
+    "name": "orgmanager/orgmanager-logos",
+    "description": "An internal utility to add the SVG OrgManager logo with a blade directive",
+    "keywords": [
+        "orgmanager",
+        "orgmanager-logos",
+        "m1guelpf"
+    ],
+    "homepage": "https://github.com/orgmanager/orgmanager-logos",
+    "license": "MPLv2.0",
+    "authors": [
+        {
+            "name": "Miguel Piedrafita",
+            "email": "soy@miguelpiedrafita.com",
+            "homepage": "https://miguelpiedrafita.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OrgManager\\Logos\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
