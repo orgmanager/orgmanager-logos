@@ -12,10 +12,10 @@ class OrgManagerLogosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      Blade::directive('orgmanager-logo', function ($expression) {
+      Blade::directive('orgmanagerLogo', function ($expression) {
         return $this->orgmanagerLogo();
       });
-      Blade::directive('orgmanager-logo-white', function ($expression) {
+      Blade::directive('orgmanagerLogoWhite', function ($expression) {
         return $this->orgmanagerLogoWhite();
       });
     }
