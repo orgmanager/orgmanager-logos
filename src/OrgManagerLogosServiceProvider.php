@@ -2,8 +2,8 @@
 
 namespace OrgManager\Logos;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\ServiceProvider;
 
 class OrgManagerLogosServiceProvider extends ServiceProvider
 {
@@ -12,12 +12,12 @@ class OrgManagerLogosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      Blade::directive('orgmanagerLogo', function ($expression) {
-        return $this->orgmanagerLogo();
-      });
-      Blade::directive('orgmanagerLogoWhite', function ($expression) {
-        return $this->orgmanagerLogoWhite();
-      });
+        Blade::directive('orgmanagerLogo', function ($expression) {
+            return $this->orgmanagerLogo();
+        });
+        Blade::directive('orgmanagerLogoWhite', function ($expression) {
+            return $this->orgmanagerLogoWhite();
+        });
     }
 
     protected function orgmanagerLogo()
@@ -31,11 +31,11 @@ class OrgManagerLogosServiceProvider extends ServiceProvider
 		l-8.7-8.7l8.7-8.7l8.7,8.7l-2.2,2.2l6.5,6.5l13-13l10.8,10.8l2.2-2.2l8.7,8.7L67.6,50.3z"/>
 </g>
 </svg>';
-  }
+    }
 
-  protected function orgmanagerLogoWhite()
-  {
-    return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    protected function orgmanagerLogoWhite()
+    {
+        return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 83.2 83.2" enable-background="new 0 0 83.2 83.2" xml:space="preserve">
 <g>
 	<path fill="#FFFFFF" d="M45.3,1.6c-2.1-2.1-5.5-2.1-7.6,0L1.6,37.7c-2.1,2.1-2.1,5.5,0,7.6l36.3,36.3c2.1,2.1,5.5,2.1,7.6,0
@@ -44,5 +44,5 @@ class OrgManagerLogosServiceProvider extends ServiceProvider
 		l-8.7-8.7l8.7-8.7l8.7,8.7l-2.2,2.2l6.5,6.5l13-13l10.8,10.8l2.2-2.2l8.7,8.7L67.6,50.3z"/>
 </g>
 </svg>';
-  }
+    }
 }
