@@ -2,7 +2,7 @@
 
 namespace OrgManager\Logos;
 
-class LogoProvider
+class Logos
 {
-  //
+    //
 }
