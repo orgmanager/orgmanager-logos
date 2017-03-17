@@ -4,6 +4,7 @@ namespace OrgManager\Logos;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use OrgManager\Logos\LogoProvider;
 
 class OrgManagerLogosServiceProvider extends ServiceProvider
 {
