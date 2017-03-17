@@ -9,10 +9,9 @@ class OrgManagerLogosServiceProvider extends ServiceProvider
 {
     protected $logo;
 
-    public function __construct(LogoProvider $logo)
+    public function __construct()
     {
-        parent::construct();
-        $this->logo = $logo;
+        $this->logo = new LogoProvider;
     }
 
     /**
