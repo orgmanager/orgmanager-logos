@@ -31,4 +31,34 @@ class OrgManagerLogosServiceProvider extends ServiceProvider
             return $this->orgmanagerVerticalWhite();
         });
     }
+    
+    protected function orgmanagerHorizontal()
+    {
+        //
+    }
+    
+    protected function orgmanagerHorizontalWhite()
+    {
+        //
+    }
+    
+    protected function orgmanagerIcon()
+    {
+        //
+    }
+    
+    protected function orgmanagerIconWhite()
+    {
+        //
+    }
+    
+    protected function orgmanagerVertical()
+    {
+        //
+    }
+    
+    protected function orgmanagerVerticalWhite()
+    {
+        //
+    }
 }
