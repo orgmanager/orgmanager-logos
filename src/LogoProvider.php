@@ -8,27 +8,27 @@ class LogoProvider
     {
         //
     }
-    
+
     public function orgmanagerHorizontalWhite()
     {
         //
     }
-    
+
     public function orgmanagerIcon()
     {
         //
     }
-    
+
     public function orgmanagerIconWhite()
     {
         //
     }
-    
+
     public function orgmanagerVertical()
     {
         //
     }
-    
+
     public function orgmanagerVerticalWhite()
     {
         //
