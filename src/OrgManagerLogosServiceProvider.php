@@ -4,18 +4,17 @@ namespace OrgManager\Logos;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use OrgManager\Logos\LogoProvider;
 
 class OrgManagerLogosServiceProvider extends ServiceProvider
 {
     protected $logo;
-    
+
     public function __construct(LogoProvider $logo)
     {
         parent::construct();
         $this->logo = $logo;
     }
-    
+
     /**
      * Bootstrap the application services.
      */
