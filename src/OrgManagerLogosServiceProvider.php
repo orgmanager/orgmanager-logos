@@ -4,61 +4,40 @@ namespace OrgManager\Logos;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use OrgManager\Logos\LogoProvider;
 
 class OrgManagerLogosServiceProvider extends ServiceProvider
 {
+    protected $logo;
+    
+    public function __construct(LogoProvider $logo)
+    {
+        parent::construct();
+        $this->logo = $logo;
+    }
+    
     /**
      * Bootstrap the application services.
      */
     public function boot()
     {
         Blade::directive('orgmanagerHorizontal', function ($expression) {
-            return $this->orgmanagerHorizontal();
+            return $this->logo->orgmanagerHorizontal();
         });
         Blade::directive('orgmanagerHorizontalWhite', function ($expression) {
-            return $this->orgmanagerHorizontalWhite();
+            return $this->logo->orgmanagerHorizontalWhite();
         });
         Blade::directive('orgmanagerIcon', function ($expression) {
-            return $this->orgmanagerIcon();
+            return $this->logo->orgmanagerIcon();
         });
         Blade::directive('orgmanagerIconWhite', function ($expression) {
-            return $this->orgmanagerIconWhite();
+            return $this->logo->orgmanagerIconWhite();
         });
         Blade::directive('orgmanagerVertical', function ($expression) {
-            return $this->orgmanagerVertical();
+            return $this->logo->orgmanagerVertical();
         });
         Blade::directive('orgmanagerVerticalWhite', function ($expression) {
-            return $this->orgmanagerVerticalWhite();
+            return $this->logo->orgmanagerVerticalWhite();
         });
-    }
-
-    protected function orgmanagerHorizontal()
-    {
-        //
-    }
-
-    protected function orgmanagerHorizontalWhite()
-    {
-        //
-    }
-
-    protected function orgmanagerIcon()
-    {
-        //
-    }
-
-    protected function orgmanagerIconWhite()
-    {
-        //
-    }
-
-    protected function orgmanagerVertical()
-    {
-        //
-    }
-
-    protected function orgmanagerVerticalWhite()
-    {
-        //
     }
 }
