@@ -26,5 +26,12 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OrgManager\\Logos\\OrgManagerLogosServiceProvider"
+            ]
+        }
     }
 }
